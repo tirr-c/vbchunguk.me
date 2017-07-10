@@ -1,0 +1,4 @@
+node_modules
+
+/publish/static-*
+/publish/index.html
