@@ -20,3 +20,12 @@
     color: gray;
   }
 }
+
+/* Print beautifully */
+@page {
+  size: A4 portrait;
+}
+
+#main > h2 {
+  page-break-before: always;
+}
