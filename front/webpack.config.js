@@ -4,6 +4,7 @@ const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const cssnext = require('postcss-cssnext');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -38,6 +39,7 @@ const common = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(['../publish/static-*'], { allowExternal: true }),
     new ExtractTextPlugin('static-[hash].css'),
     new HtmlWebpackPlugin({ template: './src/index.html' })
   ]
