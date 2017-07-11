@@ -1,0 +1,11 @@
+:root {
+  --page-width: 900px;
+  --top-spacing: 20px;
+  --side-spacing: 16px;
+}
+
+#main {
+  max-width: var(--page-width);
+  margin: var(--top-spacing) auto;
+  padding: 0 var(--side-spacing);
+}
