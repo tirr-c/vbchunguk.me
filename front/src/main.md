@@ -9,7 +9,7 @@ Wonwoo Choi <small>최원우</small>
 
 [keybase]: https://keybase.io/vbchunguk
 
-## Curriculum vitae
+### Curriculum vitae
 
 * 2016 - now: [Seoul National University, Seoul, Korea][snu]
   - B.S. Student
