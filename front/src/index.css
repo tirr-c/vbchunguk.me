@@ -3,6 +3,13 @@
   --top-spacing: 20px;
   --side-spacing: 16px;
 }
+@custom-media --narrow (width <= 600px);
+
+@media (--narrow) {
+  .github-corner {
+    display: none;
+  }
+}
 
 #main {
   max-width: var(--page-width);

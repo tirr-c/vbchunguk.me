@@ -96,3 +96,9 @@ Touhou Project games' data
 [struct-field-attributes]: https://github.com/rust-lang/rust/pull/42656
 [fix-older-urls]: https://github.com/rust-lang/rust/pull/42623
 [thtk]: https://github.com/thpatch/thtk
+
+---
+
+[AGPL-3.0]+
+
+[AGPL-3.0]: https://github.com/tirr-c/vbchunguk.me/blob/master/LICENSE
