@@ -8,4 +8,8 @@
   max-width: var(--page-width);
   margin: var(--top-spacing) auto;
   padding: 0 var(--side-spacing);
+
+  & small {
+    color: gray;
+  }
 }
