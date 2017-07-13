@@ -63,6 +63,7 @@ certificates regularly
   - [bacchus/password][password] backend, encrypts passwords with libsodium
 
 [calc]: https://github.com/tirr-c/calc
+[Electron]: https://electron.atom.io/
 [vbchunguk.me]: https://github.com/tirr-c/vbchunguk.me
 [hyeon.me]: https://github.com/simnalamburt/hyeon.me
 [snucse]: https://github.com/snucse/snucse
