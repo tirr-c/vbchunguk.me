@@ -1,14 +1,3 @@
-Wonwoo Choi <small>최원우</small>
-===
-
-<small>
-<a class="fa fa-lg fa-github" href="https://github.com/tirr-c"></a>
-<a class="fa fa-lg fa-twitter" href="https://github.com/TirrTweet"></a>
-[keybase]
-</small>
-
-[keybase]: https://keybase.io/vbchunguk
-
 ### Curriculum vitae
 
 * 2016 - now: [Seoul National University, Seoul, Korea][snu]
