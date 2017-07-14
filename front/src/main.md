@@ -40,15 +40,15 @@ certificates regularly
 ### Software Engineering
 
 * JavaScript <small>Node.js, browser</small>
-  - bot-vbcirc, an IRC bot with various features that work with tiny modules
   - slack-mailer, deliver emails to Slack channels, powered by third-party
   service
   - [calc], a toy project app which calculates given expression as accurate as
   possible
+  - (Private) bot-vbcirc, an IRC bot with various features that work with tiny
+  modules
   - (Private) qtunnel, snatch and analyze traffic from a game by opening a
   proxy server
   - (Private) Seal Defense, a defense game, is built with [Electron]
-    * A team project
     * Worked on hit detection, enemy pattern implementation, simple autoplay AI,
     ...
   - Modern web frontend
