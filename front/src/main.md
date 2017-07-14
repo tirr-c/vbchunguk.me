@@ -83,6 +83,7 @@ certificates regularly
   Book][fix-older-urls] fixed broken links in the API documentation
 * [thpatch/thtk][thtk], a set of tools used for extracting and modifying
 Touhou Project games' data
+  - Added support for more games
   - Changed build system from autotools to CMake
 
 [rust]: https://github.com/rust-lang/rust
