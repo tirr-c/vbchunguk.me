@@ -44,11 +44,12 @@ certificates regularly
   service
   - [calc], a toy project app which calculates given expression as accurate as
   possible
-  - (Private) bot-vbcirc, an IRC bot with various features that work with tiny
-  modules
-  - (Private) qtunnel, snatch and analyze traffic from a game by opening a
-  proxy server
-  - (Private) Seal Defense, a defense game, is built with [Electron]
+  - <span class="fa fa-lock"></span> bot-vbcirc,
+  an IRC bot with various features that work with tiny modules
+  - <span class="fa fa-lock"></span> qtunnel,
+  snatch and analyze traffic from a game by opening a proxy server
+  - <span class="fa fa-lock"></span> Seal Defense,
+  a defense game, is built with [Electron]
     * Worked on hit detection, enemy pattern implementation, simple autoplay AI,
     ...
   - Modern web frontend
