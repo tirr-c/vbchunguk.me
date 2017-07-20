@@ -1,0 +1,10 @@
+:root {
+  --body-width: 800px;
+  --body-margin: 16px;
+}
+
+.body {
+  max-width: var(--body-width);
+  margin: 0 auto;
+  padding: 16px;
+}
