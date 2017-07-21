@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-app>
     <resume-header :name="name">
       <resume-social type="github" username="tirr-c"></resume-social>
       <resume-social type="twitter" username="TirrTweet"></resume-social>
@@ -21,7 +21,7 @@
         <div v-html="osc"></div>
       </resume-part>
     </div>
-  </div>
+  </v-app>
 </template>
 
 <script>

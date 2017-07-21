@@ -1,23 +1,29 @@
 <template>
-  <v-container fluid grid-list-lg class="pa-0">
-    <v-layout row wrap>
-      <v-flex v-for="project in projects"
-              :key="project.name"
-              xs12 sm6>
-        <project-card :data="project"></project-card>
-      </v-flex>
-    </v-layout>
+  <v-container fluid class="pa-0">
+    <v-card>
+      <v-list two-line>
+        <template v-for="(project, index) in sortedProjects">
+          <project :key="project.name" :data="project"></project>
+          <v-divider v-if="index + 1 < projects.length"></v-divider>
+        </template>
+      </v-list>
+    </v-card>
   </v-container>
 </template>
 
 <script>
-import ProjectCard from '~components/project-card.vue';
+import Project from '~components/project-item.vue';
 
 export default {
   name: 'resume-projects',
   props: ['projects'],
+  computed: {
+    sortedProjects() {
+      return this.projects.sort((a, b) => a.name > b.name);
+    }
+  },
   components: {
-    ProjectCard
+    Project
   }
 };
 </script>

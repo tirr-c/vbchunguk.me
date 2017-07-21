@@ -20,6 +20,7 @@
   "dependencies": {
     "github-markdown-css": "^2.8.0",
     "nuxt": "^1.0.0-alpha.5",
+    "vue-octicon": "^2.1.1",
     "vuetify": "^0.14.2"
   },
   "devDependencies": {

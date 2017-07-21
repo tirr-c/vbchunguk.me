@@ -1,35 +1,38 @@
 <template>
-  <v-card :class="[{ grey: resolvedData.private }, 'lighten-3']">
-    <v-card-title>
-      <v-container fluid class="pa-0">
-        <v-layout row class="pb-2">
-          <v-icon v-if="resolvedData.private"
-                  class="vcenter body-2 yellow--text text--accent-4 pl-1">
-            lock
-          </v-icon>
-          <div class="title px-1">
+  <v-list-tile :class="{ disabled: resolvedData.private }"
+               :href="resolvedData.url">
+    <v-list-tile-content>
+      <v-list-tile-title>
+        <v-layout row class="vcenter pb-1">
+          <octicon v-if="resolvedData.private"
+                   name="lock" class="yellow--text text--accent-4 ml-1">
+          </octicon>
+          <octicon v-else
+                   name="repo" class="ml-1">
+          </octicon>
+          <div class="title mx-1">
             {{ resolvedData.name }}
           </div>
           <v-spacer></v-spacer>
-          <div class="vcenter grey--text px-1">
+          <div class="grey--text mx-1">
             {{ resolvedData.language | expandLanguage }}
           </div>
         </v-layout>
-        <div>{{ resolvedData.description }}</div>
-      </v-container>
-    </v-card-title>
-    <v-card-actions v-if="!resolvedData.private">
-      <v-spacer></v-spacer>
-      <v-btn flat class="light-blue--text" :href="resolvedData.url">
-        {{ resolvedData.caption }}
-      </v-btn>
-    </v-card-actions>
-  </v-card>
+      </v-list-tile-title>
+      <v-list-tile-sub-title>
+        {{ resolvedData.description }}
+      </v-list-tile-sub-title>
+    </v-list-tile-content>
+  </v-list-tile>
 </template>
 
 <script>
+import Octicon from 'vue-octicon/components/Octicon.vue';
+import 'vue-octicon/icons/lock';
+import 'vue-octicon/icons/repo';
+
 export default {
-  name: 'resume-project-card',
+  name: 'resume-project-item',
   props: ['data'],
   computed: {
     resolvedData() {
@@ -76,6 +79,15 @@ export default {
           return lang;
       }
     }
+  },
+  components: {
+    Octicon
   }
 };
 </script>
+
+<style>
+.disabled a {
+  pointer-events: none;
+}
+</style>
