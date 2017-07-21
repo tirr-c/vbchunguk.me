@@ -7,7 +7,7 @@
                   class="vcenter body-2 yellow--text text--accent-4 pl-1">
             lock
           </v-icon>
-          <div class="headline px-1">
+          <div class="title px-1">
             {{ resolvedData.name }}
           </div>
           <v-spacer></v-spacer>
