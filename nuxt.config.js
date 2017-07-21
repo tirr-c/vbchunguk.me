@@ -45,13 +45,13 @@ module.exports = {
       },
       {
         test: /\.md$/,
-        loader: 'raw-loader'
+        use: ['html-loader', 'markdown-loader']
       }
     ],
     postcss: {
       plugins: [
-        require('postcss-import')(),
-        require('postcss-cssnext')()
+        require('postcss-import'),
+        require('postcss-cssnext')
       ]
     }
   }

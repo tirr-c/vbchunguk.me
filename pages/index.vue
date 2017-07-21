@@ -6,7 +6,8 @@
       <resume-social url="https://keybase.io/vbchunguk">keybase</resume-social>
     </resume-header>
     <div class="body px-3 pb-3">
-      <resume-part title="Curriculum vitae" :markdown="true" :body="cv">
+      <resume-part title="Curriculum vitae">
+        <div v-html="cv"></div>
       </resume-part>
       <resume-part title="Personal projects">
         <resume-projects :projects="personalProjects">
@@ -15,6 +16,9 @@
       <resume-part title="Team projects">
         <resume-projects :projects="teamProjects">
         </resume-projects>
+      </resume-part>
+      <resume-part title="Open source contribution">
+        <div v-html="osc"></div>
       </resume-part>
     </div>
   </div>
@@ -27,6 +31,7 @@ import ResumePart from '~components/part.vue';
 import ResumeProjects from '~components/projects.vue';
 
 import cv from '~assets/cv.md';
+import osc from '~assets/open-source.md';
 import personalProjects from '~assets/personal.json';
 import teamProjects from '~assets/team.json';
 
@@ -40,6 +45,7 @@ export default {
     return {
       name: 'Wonwoo Choi',
       cv,
+      osc,
       personalProjects,
       teamProjects
     }
