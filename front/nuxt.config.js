@@ -1,6 +1,5 @@
 module.exports = {
   css: [
-    'mdi/css/materialdesignicons.css',
     'vuetify/dist/vuetify.min.css',
     { src: '~assets/main.css', lang: 'postcss' }
   ],
@@ -13,6 +12,11 @@ module.exports = {
         rel: 'stylesheet',
         type: 'text/css',
         href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+      },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: '//cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css'
       }
     ]
   },
