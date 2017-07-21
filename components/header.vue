@@ -3,7 +3,9 @@
     <div class="body pa-3">
       <hgroup>
         <h3>{{ name }}</h3>
-        <slot></slot>
+        <div class="vcenter">
+          <slot></slot>
+        </div>
       </hgroup>
     </div>
   </div>

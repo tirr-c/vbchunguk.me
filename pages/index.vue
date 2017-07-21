@@ -3,6 +3,7 @@
     <resume-header :name="name">
       <resume-social type="github" username="tirr-c"></resume-social>
       <resume-social type="twitter" username="TirrTweet"></resume-social>
+      <resume-social url="https://keybase.io/vbchunguk">keybase</resume-social>
     </resume-header>
     <div class="body pa-3">
       <resume-part title="Curriculum vitae" :markdown="true" :body="cv">

@@ -6,3 +6,8 @@
   max-width: var(--body-width);
   margin: 0 auto;
 }
+
+.vcenter {
+  display: flex;
+  align-items: center;
+}

@@ -81,10 +81,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.vcenter {
-  display: flex;
-  align-items: center;
-}
-</style>
