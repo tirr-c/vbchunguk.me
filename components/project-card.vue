@@ -2,7 +2,7 @@
   <v-card :class="[{ grey: resolvedData.private }, 'lighten-3']">
     <v-card-title>
       <v-container fluid class="pa-0">
-        <v-layout row>
+        <v-layout row class="pb-2">
           <v-icon v-if="resolvedData.private"
                   class="vcenter body-2 yellow--text text--accent-4 pl-1">
             lock
