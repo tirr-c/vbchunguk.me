@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h4>{{ title }}</h4>
+  <div class="my-2">
+    <h6>{{ title }}</h6>
     <vue-markdown :source="body" v-if="markdown"></vue-markdown>
     <slot v-else></slot>
   </div>

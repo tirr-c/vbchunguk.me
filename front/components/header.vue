@@ -1,6 +1,6 @@
 <template>
-  <div class="head">
-    <div class="body">
+  <div class="grey lighten-4">
+    <div class="body pa-3">
       <hgroup>
         <h3>{{ name }}</h3>
         <slot></slot>
@@ -15,13 +15,3 @@ export default {
   props: ['name']
 };
 </script>
-
-<style scoped lang="postcss">
-:root {
-  --head-bg: #f8f8f8;
-}
-
-.head {
-  background-color: var(--head-bg);
-}
-</style>
