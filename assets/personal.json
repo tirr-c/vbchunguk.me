@@ -35,17 +35,17 @@
     "description": "This resume is built with nuxt.js"
   },
   {
-    "name": "plachta",
-    "language": "c#",
-    "private": false,
-    "url": "github:tirr-c/plachta",
-    "description": "a puzzle solver for Atelier Sophie that tries to find an optimal solution"
-  },
-  {
     "name": "cshaheui",
     "language": "c#",
     "private": false,
     "url": "github:tirr-c/cshaheui",
     "description": "Aheui implementation in C#"
+  },
+  {
+    "name": "plachta",
+    "language": "c#",
+    "private": false,
+    "url": "github:tirr-c/plachta",
+    "description": "a puzzle solver for Atelier Sophie that tries to find an optimal solution"
   }
 ]
