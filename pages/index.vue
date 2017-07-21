@@ -30,10 +30,10 @@ import ResumeSocial from '~components/social.vue';
 import ResumePart from '~components/part.vue';
 import ResumeProjects from '~components/projects.vue';
 
-import cv from '~assets/cv.md';
-import osc from '~assets/open-source.md';
-import personalProjects from '~assets/personal.json';
-import teamProjects from '~assets/team.json';
+import cv from '~assets/docs/cv.md';
+import osc from '~assets/docs/open-source.md';
+import personalProjects from '~assets/docs/personal.json';
+import teamProjects from '~assets/docs/team.json';
 
 export default {
   head() {

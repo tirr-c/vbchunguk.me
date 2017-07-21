@@ -1,7 +1,7 @@
 module.exports = {
   css: [
     'vuetify/dist/vuetify.min.css',
-    { src: '~assets/main.css', lang: 'postcss' }
+    { src: '~assets/stylesheets/main.css', lang: 'postcss' }
   ],
   plugins: [
     '~plugins/vuetify'
