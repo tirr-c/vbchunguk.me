@@ -1,6 +1,6 @@
 <template>
   <div>
-    <resume-header name="Wonwoo Choi">
+    <resume-header :name="name">
       <resume-social type="github" username="tirr-c"></resume-social>
       <resume-social type="twitter" username="TirrTweet"></resume-social>
     </resume-header>
@@ -25,8 +25,14 @@ import cv from '~assets/cv.md';
 import personalProjects from '~assets/personal.json';
 
 export default {
+  head() {
+    return {
+      title: this.name
+    };
+  },
   data() {
     return {
+      name: 'Wonwoo Choi',
       cv,
       personalProjects
     }
