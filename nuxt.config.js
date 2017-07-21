@@ -32,8 +32,7 @@ module.exports = {
       app: 'app.[hash].js'
     },
     vendor: [
-      'vuetify',
-      'vue-markdown'
+      'vuetify'
     ],
     loaders: [
       {
