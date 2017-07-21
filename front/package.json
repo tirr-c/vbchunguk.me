@@ -4,7 +4,8 @@
   "description": "Curriculum vitae of Tirr",
   "main": "index.js",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "generate": "nuxt generate"
   },
   "repository": {
     "type": "git",
