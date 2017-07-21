@@ -1,0 +1,16 @@
+[
+  {
+    "name": "snucse/snucse",
+    "language": "js",
+    "private": false,
+    "url": "github:snucse/snucse",
+    "description": "A community site for SNU CSE students"
+  },
+  {
+    "name": "Seal Defense",
+    "language": "js",
+    "private": true,
+    "url": null,
+    "description": "A defense game which is built with Electron. Worked on hit detection, enemy pattern implementation, simple autoplay AI, ..."
+  }
+]

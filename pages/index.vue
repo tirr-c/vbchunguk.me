@@ -5,11 +5,15 @@
       <resume-social type="twitter" username="TirrTweet"></resume-social>
       <resume-social url="https://keybase.io/vbchunguk">keybase</resume-social>
     </resume-header>
-    <div class="body pa-3">
+    <div class="body px-3 pb-3">
       <resume-part title="Curriculum vitae" :markdown="true" :body="cv">
       </resume-part>
       <resume-part title="Personal projects">
         <resume-projects :projects="personalProjects">
+        </resume-projects>
+      </resume-part>
+      <resume-part title="Team projects">
+        <resume-projects :projects="teamProjects">
         </resume-projects>
       </resume-part>
     </div>
@@ -24,6 +28,7 @@ import ResumeProjects from '~components/projects.vue';
 
 import cv from '~assets/cv.md';
 import personalProjects from '~assets/personal.json';
+import teamProjects from '~assets/team.json';
 
 export default {
   head() {
@@ -35,7 +40,8 @@ export default {
     return {
       name: 'Wonwoo Choi',
       cv,
-      personalProjects
+      personalProjects,
+      teamProjects
     }
   },
   components: {
