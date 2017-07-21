@@ -20,11 +20,9 @@
     </v-card-title>
     <v-card-actions v-if="!resolvedData.private">
       <v-spacer></v-spacer>
-      <a :href="resolvedData.url">
-        <v-btn flat class="light-blue--text">
-          {{ resolvedData.caption }}
-        </v-btn>
-      </a>
+      <v-btn flat class="light-blue--text" :href="resolvedData.url">
+        {{ resolvedData.caption }}
+      </v-btn>
     </v-card-actions>
   </v-card>
 </template>
