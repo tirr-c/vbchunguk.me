@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="pa-0">
     <v-card>
-      <v-list two-line>
+      <v-list three-line>
         <template v-for="(project, index) in sortedProjects">
           <project :key="project.name" :data="project"></project>
           <v-divider v-if="index + 1 < projects.length"></v-divider>
