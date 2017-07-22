@@ -4,11 +4,8 @@
     <v-list-tile-content>
       <v-list-tile-title>
         <v-layout row class="vcenter pb-1">
-          <octicon v-if="resolvedData.private"
-                   name="lock" class="yellow--text text--accent-4 ml-1">
-          </octicon>
-          <octicon v-else
-                   name="repo" class="ml-1">
+          <octicon :name="resolvedData.private ? 'lock' : 'repo'"
+                   :class="octiconClass">
           </octicon>
           <div class="title mx-1">
             {{ resolvedData.name }}
@@ -27,9 +24,7 @@
 </template>
 
 <script>
-import Octicon from 'vue-octicon/components/Octicon.vue';
-import 'vue-octicon/icons/lock';
-import 'vue-octicon/icons/repo';
+import Octicon from '~components/octicon.vue';
 
 export default {
   name: 'resume-project-item',
@@ -66,6 +61,12 @@ export default {
         ...item,
         ...computeUrl(type, path, item.url)
       };
+    },
+    octiconClass() {
+      const baseClass = ['ml-1'];
+      const yellowClass = ['yellow--text', 'text--accent-4'];
+      if (this.resolvedData.private) return [].concat(baseClass, yellowClass);
+      else return baseClass;
     }
   },
   filters: {

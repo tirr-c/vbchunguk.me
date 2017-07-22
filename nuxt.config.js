@@ -1,6 +1,7 @@
 module.exports = {
   css: [
     'vuetify/dist/vuetify.min.css',
+    'octicons/build/octicons.css',
     { src: '~assets/stylesheets/main.css', lang: 'postcss' }
   ],
   plugins: [
@@ -32,7 +33,8 @@ module.exports = {
       app: 'app.[hash].js'
     },
     vendor: [
-      'vuetify'
+      'vuetify',
+      'octicons'
     ],
     loaders: [
       {
