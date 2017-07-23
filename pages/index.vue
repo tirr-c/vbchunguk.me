@@ -1,5 +1,7 @@
 <template>
   <v-app>
+    <github-corner href="https://github.com/tirr-c/vbchunguk.me">
+    </github-corner>
     <resume-header :name="name">
       <resume-social type="github" username="tirr-c"></resume-social>
       <resume-social type="twitter" username="TirrTweet"></resume-social>
@@ -39,6 +41,13 @@
         </v-container>
       </resume-part>
     </div>
+    <v-footer>
+      <v-spacer></v-spacer>
+      <div>
+        <a href="https://github.com/tirr-c/vbchunguk.me/blob/master/LICENSE">AGPL-3.0</a>
+        <span>+</span>
+      </div>
+    </v-footer>
   </v-app>
 </template>
 
@@ -49,6 +58,7 @@ import ResumePart from '~components/part.vue';
 import ResumeProjects from '~components/projects.vue';
 import ResumePr from '~components/pr.vue';
 import ResumePrItem from '~components/pr-item.vue';
+import GithubCorner from '~components/github-corner.vue';
 
 import cv from '~assets/docs/cv.md';
 import personalProjects from '~assets/docs/personal.json';
@@ -76,7 +86,8 @@ export default {
     ResumePart,
     ResumeProjects,
     ResumePr,
-    ResumePrItem
+    ResumePrItem,
+    GithubCorner
   }
 };
 </script>
