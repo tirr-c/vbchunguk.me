@@ -2,17 +2,13 @@
 
 My website that will eventually become my resume.
 
-Based on [simnalamburt/hyeon.me][hyeon.me].
+Inspired by [simnalamburt/hyeon.me][hyeon.me].
 
 ```sh
-cd front/
+npm install       # Download dependencies. Please use npm >=5
 
-npm install        # Download dependencies. Please use npm >=5
-npm run build      # Build frontend codes for production
-npm run build:dev  # Build frontend codes for development
-
-npm watch          # Watch for the changes, and build codes for development
-npm start          # Start a development server(webpack-dev-server)
+npm run dev       # Start a development server(nuxt)
+npm run generate  # Generate static pages(nuxt generate)
 ```
 
 ---
