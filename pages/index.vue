@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <github-corner href="https://github.com/tirr-c/vbchunguk.me">
+    <github-corner href="https://github.com/tirr-c/vbchunguk.me"
+                   class="hidden-xs-only">
     </github-corner>
     <resume-header :name="name">
       <resume-social type="github" username="tirr-c"></resume-social>
