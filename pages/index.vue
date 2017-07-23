@@ -18,7 +18,21 @@
         </resume-projects>
       </resume-part>
       <resume-part title="Open source contribution">
-        <div v-html="osc"></div>
+        <v-layout row wrap>
+          <v-flex v-for="project in oscProjects"
+                  xs12 sm6>
+            <resume-pr :name="project.name"
+                       :description="project.description"
+                       :url="project.url">
+              <template v-for="pr in project.pr">
+                <resume-pr-item :title="pr.title"
+                                :status="pr.status"
+                                :url="pr.url">
+                </resume-pr-item>
+              </template>
+            </resume-pr>
+          </v-flex>
+        </v-layout>
       </resume-part>
     </div>
   </v-app>
@@ -29,11 +43,13 @@ import ResumeHeader from '~components/header.vue';
 import ResumeSocial from '~components/social.vue';
 import ResumePart from '~components/part.vue';
 import ResumeProjects from '~components/projects.vue';
+import ResumePr from '~components/pr.vue';
+import ResumePrItem from '~components/pr-item.vue';
 
 import cv from '~assets/docs/cv.md';
-import osc from '~assets/docs/open-source.md';
 import personalProjects from '~assets/docs/personal.json';
 import teamProjects from '~assets/docs/team.json';
+import oscProjects from '~assets/docs/open-source.json';
 
 export default {
   head() {
@@ -45,16 +61,18 @@ export default {
     return {
       name: 'Wonwoo Choi',
       cv,
-      osc,
       personalProjects,
-      teamProjects
+      teamProjects,
+      oscProjects
     }
   },
   components: {
     ResumeHeader,
     ResumeSocial,
     ResumePart,
-    ResumeProjects
+    ResumeProjects,
+    ResumePr,
+    ResumePrItem
   }
 };
 </script>
