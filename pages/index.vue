@@ -18,21 +18,23 @@
         </resume-projects>
       </resume-part>
       <resume-part title="Open source contribution">
-        <v-layout row wrap>
-          <v-flex v-for="project in oscProjects"
-                  xs12 sm6>
-            <resume-pr :name="project.name"
-                       :description="project.description"
-                       :url="project.url">
-              <template v-for="pr in project.pr">
-                <resume-pr-item :title="pr.title"
-                                :status="pr.status"
-                                :url="pr.url">
-                </resume-pr-item>
-              </template>
-            </resume-pr>
-          </v-flex>
-        </v-layout>
+        <v-container fluid grid-list-md>
+          <v-layout row wrap>
+            <v-flex v-for="project in oscProjects"
+                    xs12 sm6>
+              <resume-pr :name="project.name"
+                         :description="project.description"
+                         :url="project.url">
+                <template v-for="pr in project.pr">
+                  <resume-pr-item :title="pr.title"
+                                  :status="pr.status"
+                                  :url="pr.url">
+                  </resume-pr-item>
+                </template>
+              </resume-pr>
+            </v-flex>
+          </v-layout>
+        </v-container>
       </resume-part>
     </div>
   </v-app>

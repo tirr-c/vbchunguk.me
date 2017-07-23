@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container fluid grid-list-md>
     <v-card>
       <v-list three-line>
         <template v-for="(project, index) in sortedProjects">
