@@ -11,7 +11,7 @@
             {{ resolvedData.name }}
           </div>
           <v-spacer></v-spacer>
-          <div class="grey--text mx-1">
+          <div class="mx-1" style="color: rgba(0, 0, 0, .54);">
             {{ resolvedData.language | expandLanguage }}
           </div>
         </v-layout>

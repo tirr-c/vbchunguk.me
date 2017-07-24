@@ -4,10 +4,17 @@ export default {
   props: {
     type: String,
     username: String,
+    alt: String,
     url: String,
     icon: {
       type: Boolean,
       default: false,
+    }
+  },
+  computed: {
+    resolvedAlt() {
+      if (this.alt) return this.alt;
+      return this.username;
     }
   },
   render(createElement) {
@@ -48,7 +55,16 @@ export default {
       },
       body
     );
-    return createElement('div', [button]);
+    return createElement(
+      'div',
+      {
+        'class': ['social'],
+        attrs: {
+          'data-alt': this.resolvedAlt
+        }
+      },
+      [button]
+    );
   }
 };
 </script>
@@ -56,5 +72,12 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
+}
+
+@media print {
+  .social::after {
+    margin-left: -8px;
+    content: attr(data-alt);
+  }
 }
 </style>

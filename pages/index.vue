@@ -1,12 +1,14 @@
 <template>
   <v-app>
     <github-corner href="https://github.com/tirr-c/vbchunguk.me"
-                   class="hidden-xs-only">
+                   class="hidden-xs-only hidden-print">
     </github-corner>
     <resume-header :name="name">
       <resume-social type="github" username="tirr-c"></resume-social>
       <resume-social type="twitter" username="TirrTweet"></resume-social>
-      <resume-social url="https://keybase.io/vbchunguk">keybase</resume-social>
+      <resume-social url="https://keybase.io/vbchunguk" alt="vbchunguk">
+        keybase
+      </resume-social>
     </resume-header>
     <div class="body px-3 pb-3">
       <resume-part title="Curriculum vitae">
@@ -15,10 +17,12 @@
       <resume-part title="Server administration experiences">
         <div v-html="server"></div>
       </resume-part>
+      <page-divider></page-divider>
       <resume-part title="Personal projects">
         <resume-projects :projects="personalProjects">
         </resume-projects>
       </resume-part>
+      <page-divider></page-divider>
       <resume-part title="Team projects">
         <resume-projects :projects="teamProjects">
         </resume-projects>
@@ -45,7 +49,7 @@
         </v-container>
       </resume-part>
     </div>
-    <v-footer>
+    <v-footer class="hidden-print">
       <v-spacer></v-spacer>
       <div>
         <a href="https://github.com/tirr-c/vbchunguk.me/blob/master/LICENSE">AGPL-3.0</a>
@@ -63,6 +67,7 @@ import ResumeProjects from '~components/projects.vue';
 import ResumePr from '~components/pr.vue';
 import ResumePrItem from '~components/pr-item.vue';
 import GithubCorner from '~components/github-corner.vue';
+import PageDivider from '~components/page-divider.vue';
 
 import cv from '~assets/docs/cv.md';
 import server from '~assets/docs/server.md';
@@ -93,7 +98,8 @@ export default {
     ResumeProjects,
     ResumePr,
     ResumePrItem,
-    GithubCorner
+    GithubCorner,
+    PageDivider
   }
 };
 </script>

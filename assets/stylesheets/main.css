@@ -11,3 +11,13 @@
   display: flex;
   align-items: center;
 }
+
+@media print {
+  .hidden-print {
+    display: none;
+  }
+}
+
+@page {
+  size: A4 portrait;
+}
