@@ -46,6 +46,6 @@
     "language": "c#",
     "private": false,
     "url": "github:tirr-c/plachta",
-    "description": "a puzzle solver for Atelier Sophie that tries to find an optimal solution"
+    "description": "A puzzle solver for Atelier Sophie that tries to find an optimal solution"
   }
 ]
