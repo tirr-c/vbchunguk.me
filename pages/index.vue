@@ -12,6 +12,9 @@
       <resume-part title="Curriculum vitae">
         <div v-html="cv"></div>
       </resume-part>
+      <resume-part title="Server administration experiences">
+        <div v-html="server"></div>
+      </resume-part>
       <resume-part title="Personal projects">
         <resume-projects :projects="personalProjects">
         </resume-projects>
@@ -62,6 +65,7 @@ import ResumePrItem from '~components/pr-item.vue';
 import GithubCorner from '~components/github-corner.vue';
 
 import cv from '~assets/docs/cv.md';
+import server from '~assets/docs/server.md';
 import personalProjects from '~assets/docs/personal.json';
 import teamProjects from '~assets/docs/team.json';
 import oscProjects from '~assets/docs/open-source.json';
@@ -76,6 +80,7 @@ export default {
     return {
       name: 'Wonwoo Choi',
       cv,
+      server,
       personalProjects,
       teamProjects,
       oscProjects
