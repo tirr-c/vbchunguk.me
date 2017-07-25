@@ -15,7 +15,7 @@ certificates regularly
 [Bacchus]: https://bacchus.snucse.org/about/
 [arisa]: https://arisa.vbchunguk.me/
 [Conoha]: https://www.conoha.jp/
-[erika]: https://arisa.vbchunguk.me/
+[erika]: https://erika.vbchunguk.me/
 [yunyun]: https://yunyun.vbchunguk.me/
 [systemd-certbot-renew]: https://github.com/tirr-c/systemd-certbot-renew
 [backup.sh]: https://gist.github.com/tirr-c/c7a972db17fdb4ac384b9abb7c92ffed
