@@ -49,12 +49,7 @@
         </v-container>
       </resume-part>
       <resume-part title="Miscellaneous projects">
-        <p>
-        These projects are unpublishable because they might contain sensitive
-        information.
-        </p>
-        <resume-projects :projects="miscProjects">
-        </resume-projects>
+        <div v-html="misc"></div>
       </resume-part>
     </div>
     <v-footer class="hidden-print">
@@ -79,10 +74,10 @@ import PageDivider from '~components/page-divider.vue';
 
 import cv from '~assets/docs/cv.md';
 import server from '~assets/docs/server.md';
+import misc from '~assets/docs/misc.md';
 import personalProjects from '~assets/docs/personal.json';
 import teamProjects from '~assets/docs/team.json';
 import oscProjects from '~assets/docs/open-source.json';
-import miscProjects from '~assets/docs/misc.json';
 
 export default {
   head() {
@@ -95,10 +90,10 @@ export default {
       name: 'Wonwoo Choi',
       cv,
       server,
+      misc,
       personalProjects,
       teamProjects,
-      oscProjects,
-      miscProjects
+      oscProjects
     }
   },
   components: {
