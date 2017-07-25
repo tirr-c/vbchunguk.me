@@ -13,6 +13,9 @@
 }
 
 @media print {
+  a {
+    text-decoration: none;
+  }
   .hidden-print {
     display: none;
   }
