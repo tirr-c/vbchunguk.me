@@ -1,0 +1,16 @@
+[
+  {
+    "name": "bot-vbcirc",
+    "language": "js",
+    "private": true,
+    "url": null,
+    "description": "An IRC bot with various features that work with tiny modules"
+  },
+  {
+    "name": "qtunnel",
+    "language": "js",
+    "private": true,
+    "url": null,
+    "description": "Snatch and analyze traffic from a game by opening a proxy server"
+  }
+]

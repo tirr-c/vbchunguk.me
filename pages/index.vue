@@ -22,11 +22,11 @@
         <resume-projects :projects="personalProjects">
         </resume-projects>
       </resume-part>
-      <page-divider></page-divider>
       <resume-part title="Team projects">
         <resume-projects :projects="teamProjects">
         </resume-projects>
       </resume-part>
+      <page-divider></page-divider>
       <resume-part title="Open source contribution">
         <v-container fluid grid-list-md>
           <v-layout row wrap>
@@ -47,6 +47,14 @@
             </v-flex>
           </v-layout>
         </v-container>
+      </resume-part>
+      <resume-part title="Miscellaneous projects">
+        <p>
+        These projects are unpublishable because they might contain sensitive
+        information.
+        </p>
+        <resume-projects :projects="miscProjects">
+        </resume-projects>
       </resume-part>
     </div>
     <v-footer class="hidden-print">
@@ -74,6 +82,7 @@ import server from '~assets/docs/server.md';
 import personalProjects from '~assets/docs/personal.json';
 import teamProjects from '~assets/docs/team.json';
 import oscProjects from '~assets/docs/open-source.json';
+import miscProjects from '~assets/docs/misc.json';
 
 export default {
   head() {
@@ -88,7 +97,8 @@ export default {
       server,
       personalProjects,
       teamProjects,
-      oscProjects
+      oscProjects,
+      miscProjects
     }
   },
   components: {
