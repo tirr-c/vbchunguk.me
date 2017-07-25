@@ -19,7 +19,10 @@ export default {
   props: ['projects'],
   computed: {
     sortedProjects() {
-      return this.projects.sort((a, b) => a.name > b.name);
+      return this.projects.sort((a, b) => {
+        if (a.private !== b.private) return a.private;
+        return a.name > b.name;
+      });
     }
   },
   components: {
