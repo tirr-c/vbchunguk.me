@@ -2,9 +2,9 @@
   - [arisa] runs on [Conoha]
   - [erika] runs on AWS and serves vbchunguk.me
   - [yunyun] runs on Raspberry Pi 3
-* [systemd-certbot-renew], simple systemd service that renews Let's Encrypt
+* **[systemd-certbot-renew]**, simple systemd service that renews Let's Encrypt
 certificates regularly
-* [Bacchus], the server administrator group of SNU CSE
+* **[Bacchus]**, the server administrator group of SNU CSE
   - Manages 20 physical server machines, and 15 of them are currently running
   - [Simple shell script snippet][backup.sh] for backing up home directories of
   users, written for internal use
