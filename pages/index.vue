@@ -5,7 +5,6 @@
     </github-corner>
     <resume-header :name="name">
       <resume-social type="github" username="tirr-c"></resume-social>
-      <resume-social type="twitter" username="TirrTweet"></resume-social>
       <resume-social url="https://keybase.io/vbchunguk" alt="vbchunguk">
         keybase
       </resume-social>
