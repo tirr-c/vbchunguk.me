@@ -31,7 +31,7 @@
           <v-layout row wrap>
             <v-flex v-for="project in oscProjects"
                     :key="project.name"
-                    xs12 sm6>
+                    xs12>
               <resume-pr :name="project.name"
                          :description="project.description"
                          :url="project.url">
