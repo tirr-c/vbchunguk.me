@@ -1,8 +1,10 @@
 <template>
   <v-card>
     <v-card-title primary-title>
-      <h3 class="title mb-0">{{ name }}</h3>
-      <p v-if="description" class="mt-2 mb-0">{{ description }}</p>
+      <div>
+        <h3 class="title mb-0">{{ name }}</h3>
+        <p v-if="description" class="mt-2 mb-0">{{ description }}</p>
+      </div>
     </v-card-title>
     <v-card-actions class="hidden-print">
       <v-btn flat class="light-blue--text" :href="resolvedUrl.url">

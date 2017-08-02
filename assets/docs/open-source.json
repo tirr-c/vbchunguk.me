@@ -17,6 +17,18 @@
     ]
   },
   {
+    "name": "slate/slate-irc",
+    "description": "An IRC client library for Node.js",
+    "url": "github:slate/slate-irc",
+    "pr": [
+      {
+        "title": "Prevent cross IRC scripting vulnerability",
+        "status": "merged",
+        "url": "github:slate/slate-irc#43"
+      }
+    ]
+  },
+  {
     "name": "thpatch/thtk",
     "description": "A set of tools used for extracting and modifying Touhou Project games' data",
     "url": "github:thpatch/thtk",
