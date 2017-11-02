@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Project from '~components/project-item.vue';
+import Project from '~/components/project-item.vue';
 
 export default {
   name: 'resume-projects',

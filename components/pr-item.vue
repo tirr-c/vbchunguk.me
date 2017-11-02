@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Octicon from '~components/octicon.vue';
+import Octicon from '~/components/octicon.vue';
 
 export default {
   name: 'resume-pr-item',

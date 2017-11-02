@@ -2,10 +2,10 @@ module.exports = {
   css: [
     'vuetify/dist/vuetify.min.css',
     'octicons/build/octicons.css',
-    { src: '~assets/stylesheets/main.css', lang: 'postcss' }
+    { src: '~/assets/stylesheets/main.css', lang: 'postcss' }
   ],
   plugins: [
-    '~plugins/vuetify'
+    '~/plugins/vuetify'
   ],
   head: {
     meta: [
@@ -36,19 +36,22 @@ module.exports = {
       'vuetify',
       'octicons'
     ],
-    loaders: [
-      {
-        test: /\.(?:jpg|png|(?:woff2?|ttf|eot|svg)(?:\?v=[0-9]\.[0-9]\.[0-9])?)$/,
-        loader: 'file-loader',
-        query: {
-          name: '[hash].[ext]'
+    extend(config) {
+      config.module.rules = [
+        ...config.module.rules,
+        {
+          test: /\.(?:jpg|png|(?:woff2?|ttf|eot|svg)(?:\?v=[0-9]\.[0-9]\.[0-9])?)$/,
+          loader: 'file-loader',
+          query: {
+            name: '[hash].[ext]'
+          }
+        },
+        {
+          test: /\.md$/,
+          use: ['html-loader', 'markdown-loader']
         }
-      },
-      {
-        test: /\.md$/,
-        use: ['html-loader', 'markdown-loader']
-      }
-    ],
+      ];
+    },
     postcss: {
       plugins: [
         require('postcss-import'),

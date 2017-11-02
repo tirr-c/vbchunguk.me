@@ -62,21 +62,21 @@
 </template>
 
 <script>
-import ResumeHeader from '~components/header.vue';
-import ResumeSocial from '~components/social.vue';
-import ResumePart from '~components/part.vue';
-import ResumeProjects from '~components/projects.vue';
-import ResumePr from '~components/pr.vue';
-import ResumePrItem from '~components/pr-item.vue';
-import GithubCorner from '~components/github-corner.vue';
-import PageDivider from '~components/page-divider.vue';
+import ResumeHeader from '~/components/header.vue';
+import ResumeSocial from '~/components/social.vue';
+import ResumePart from '~/components/part.vue';
+import ResumeProjects from '~/components/projects.vue';
+import ResumePr from '~/components/pr.vue';
+import ResumePrItem from '~/components/pr-item.vue';
+import GithubCorner from '~/components/github-corner.vue';
+import PageDivider from '~/components/page-divider.vue';
 
-import cv from '~assets/docs/cv.md';
-import server from '~assets/docs/server.md';
-import misc from '~assets/docs/misc.md';
-import personalProjects from '~assets/docs/personal.json';
-import teamProjects from '~assets/docs/team.json';
-import oscProjects from '~assets/docs/open-source.json';
+import cv from '~/assets/docs/cv.md';
+import server from '~/assets/docs/server.md';
+import misc from '~/assets/docs/misc.md';
+import personalProjects from '~/assets/docs/personal.json';
+import teamProjects from '~/assets/docs/team.json';
+import oscProjects from '~/assets/docs/open-source.json';
 
 export default {
   head() {
