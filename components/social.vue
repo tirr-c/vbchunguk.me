@@ -21,9 +21,6 @@ export default {
     function makeIcon(icon) {
       return createElement(
         'v-icon',
-        {
-          props: {mdi: true},
-        },
         icon
       );
     }
@@ -34,12 +31,12 @@ export default {
     switch (this.type) {
       case 'twitter':
         url = `https://twitter.com/${this.username}`;
-        body = [makeIcon('twitter')];
+        body = [makeIcon('mdi-twitter')];
         iconButton = true;
         break;
       case 'github':
         url = `https://github.com/${this.username}`;
-        body = [makeIcon('github-circle')];
+        body = [makeIcon('mdi-github-circle')];
         iconButton = true;
         break;
     }
