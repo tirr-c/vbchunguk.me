@@ -3,6 +3,7 @@
     <div class="body pa-3">
       <hgroup>
         <h3>{{ name }}</h3>
+        <h5 v-if="apply">for {{ apply }}</h5>
         <div class="vcenter">
           <slot></slot>
         </div>
@@ -14,6 +15,6 @@
 <script>
 export default {
   name: 'resume-header',
-  props: ['name']
+  props: ['name', 'apply']
 };
 </script>

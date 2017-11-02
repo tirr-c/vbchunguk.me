@@ -10,6 +10,10 @@
       </resume-social>
     </resume-header>
     <div class="body px-3 pb-3">
+      <resume-part v-if="enableCover" title="Cover letter">
+        <div v-html="cover"></div>
+      </resume-part>
+      <page-divider></page-divider>
       <resume-part title="Curriculum vitae">
         <div v-html="cv"></div>
       </resume-part>
@@ -60,6 +64,7 @@ import ResumePr from '~/components/pr.vue';
 import GithubCorner from '~/components/github-corner.vue';
 import PageDivider from '~/components/page-divider.vue';
 
+import cover from '~/assets/docs/cover.md';
 import cv from '~/assets/docs/cv.md';
 import web from '~/assets/docs/web.md';
 import systems from '~/assets/docs/systems.md';
@@ -80,6 +85,8 @@ export default {
   data() {
     return {
       name: 'Wonwoo Choi',
+      enableCover: false,
+      cover,
       cv,
       web,
       systems,
