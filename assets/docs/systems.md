@@ -1,8 +1,8 @@
 * Rust
   - My favorite language along with JavaScript/TypeScript
   - Have written a web crawler
-  - Simple tool that computes FIRST and FOLLOW for symbols of LL(1) grammar,
-    for Compiler class assignment
+  - Have built a simple tool that computes FIRST and FOLLOW for symbols of LL(1)
+  grammar, for Compiler class assignment
   - Asynchronous programming using [futures] and [Tokio]
   - Often contribute to the Rust compiler itself: +1586 -1051 from 15 Jun, 2017
     * Full list is available [here][rust-contrib]
