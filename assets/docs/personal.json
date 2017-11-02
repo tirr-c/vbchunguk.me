@@ -14,13 +14,6 @@
     "description": "A toy project app which calculates given expression as accurate as possible"
   },
   {
-    "name": "vbchunguk.me",
-    "language": "js",
-    "private": false,
-    "url": "github:tirr-c/vbchunguk.me",
-    "description": "This resume is built with nuxt.js"
-  },
-  {
     "name": "cshaheui",
     "language": "c#",
     "private": false,

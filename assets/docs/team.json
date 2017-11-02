@@ -1,12 +1,5 @@
 [
   {
-    "name": "snucse/snucse",
-    "language": "js",
-    "private": false,
-    "url": "github:snucse/snucse",
-    "description": "The community site for SNU CSE students"
-  },
-  {
     "name": "Seal Defense",
     "language": "js",
     "private": true,

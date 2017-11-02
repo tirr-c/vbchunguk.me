@@ -1,0 +1,16 @@
+[
+  {
+    "name": "vbchunguk.me",
+    "language": "js",
+    "private": false,
+    "url": "github:tirr-c/vbchunguk.me",
+    "description": "This resume is built with nuxt.js"
+  },
+  {
+    "name": "snucse/snucse",
+    "language": "js",
+    "private": false,
+    "url": "github:snucse/snucse",
+    "description": "The community site for SNU CSE students"
+  }
+]

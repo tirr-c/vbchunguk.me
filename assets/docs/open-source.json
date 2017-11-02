@@ -1,22 +1,5 @@
 [
   {
-    "name": "rust-lang/rust",
-    "description": "",
-    "url": "github:rust-lang/rust",
-    "pr": [
-      {
-        "title": "ICE fix: Use T as the subpattern type of Box<T>",
-        "status": "merged",
-        "url": "github:rust-lang/rust#42730"
-      },
-      {
-        "title": "Fix broken links in the API documentation",
-        "status": "merged",
-        "url": "github:rust-lang/rust#42656"
-      }
-    ]
-  },
-  {
     "name": "slate/slate-irc",
     "description": "An IRC client library for Node.js",
     "url": "github:slate/slate-irc",
@@ -25,23 +8,6 @@
         "title": "Prevent cross IRC scripting vulnerability",
         "status": "merged",
         "url": "github:slate/slate-irc#43"
-      }
-    ]
-  },
-  {
-    "name": "thpatch/thtk",
-    "description": "A set of tools used for extracting and modifying Touhou Project games' data",
-    "url": "github:thpatch/thtk",
-    "pr": [
-      {
-        "title": "Add support for more games",
-        "status": "merged",
-        "url": "github:thpatch/thtk#1"
-      },
-      {
-        "title": "Use CMake instead of autotools",
-        "status": "merged",
-        "url": "github:thpatch/thtk#7"
       }
     ]
   }

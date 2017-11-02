@@ -13,39 +13,28 @@
       <resume-part title="Curriculum vitae">
         <div v-html="cv"></div>
       </resume-part>
+      <resume-part title="Web frontend development experiences">
+        <div v-html="web"></div>
+        <resume-projects :projects="webProjects"></resume-projects>
+      </resume-part>
+      <page-divider></page-divider>
+      <resume-part title="Systems programming language experiences">
+        <div v-html="systems"></div>
+        <resume-pr-list :projects="systemsProjects"></resume-pr-list>
+      </resume-part>
+      <page-divider></page-divider>
       <resume-part title="Server administration experiences">
         <div v-html="server"></div>
       </resume-part>
-      <page-divider></page-divider>
       <resume-part title="Personal projects">
-        <resume-projects :projects="personalProjects">
-        </resume-projects>
-      </resume-part>
-      <resume-part title="Team projects">
-        <resume-projects :projects="teamProjects">
-        </resume-projects>
+        <resume-projects :projects="personalProjects"></resume-projects>
       </resume-part>
       <page-divider></page-divider>
+      <resume-part title="Team projects">
+        <resume-projects :projects="teamProjects"></resume-projects>
+      </resume-part>
       <resume-part title="Open source contribution">
-        <v-container fluid grid-list-md>
-          <v-layout row wrap>
-            <v-flex v-for="project in oscProjects"
-                    :key="project.name"
-                    xs12>
-              <resume-pr :name="project.name"
-                         :description="project.description"
-                         :url="project.url">
-                <template v-for="pr in project.pr">
-                  <resume-pr-item :key="pr.url"
-                                  :title="pr.title"
-                                  :status="pr.status"
-                                  :url="pr.url">
-                  </resume-pr-item>
-                </template>
-              </resume-pr>
-            </v-flex>
-          </v-layout>
-        </v-container>
+        <resume-pr-list :projects="oscProjects"></resume-pr-list>
       </resume-part>
       <resume-part title="Miscellaneous projects">
         <div v-html="misc"></div>
@@ -66,14 +55,18 @@ import ResumeHeader from '~/components/header.vue';
 import ResumeSocial from '~/components/social.vue';
 import ResumePart from '~/components/part.vue';
 import ResumeProjects from '~/components/projects.vue';
+import ResumePrList from '~/components/pr-list.vue';
 import ResumePr from '~/components/pr.vue';
-import ResumePrItem from '~/components/pr-item.vue';
 import GithubCorner from '~/components/github-corner.vue';
 import PageDivider from '~/components/page-divider.vue';
 
 import cv from '~/assets/docs/cv.md';
+import web from '~/assets/docs/web.md';
+import systems from '~/assets/docs/systems.md';
 import server from '~/assets/docs/server.md';
 import misc from '~/assets/docs/misc.md';
+import webProjects from '~/assets/docs/web.json';
+import systemsProjects from '~/assets/docs/systems.json';
 import personalProjects from '~/assets/docs/personal.json';
 import teamProjects from '~/assets/docs/team.json';
 import oscProjects from '~/assets/docs/open-source.json';
@@ -88,8 +81,12 @@ export default {
     return {
       name: 'Wonwoo Choi',
       cv,
+      web,
+      systems,
       server,
       misc,
+      webProjects,
+      systemsProjects,
       personalProjects,
       teamProjects,
       oscProjects
@@ -100,8 +97,8 @@ export default {
     ResumeSocial,
     ResumePart,
     ResumeProjects,
+    ResumePrList,
     ResumePr,
-    ResumePrItem,
     GithubCorner,
     PageDivider
   }

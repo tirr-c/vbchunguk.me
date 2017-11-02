@@ -5,7 +5,16 @@
 * **[systemd-certbot-renew]**, simple systemd service that renews Let's Encrypt
 certificates regularly
 * **[Bacchus]**, the server administrator group of SNU CSE
-  - Manages 20 physical server machines, and 15 of them are currently running
+  - Manages 22 physical server machines, and 15 of them are currently running
+  - Also manages 124 desktop machines
+    * 94 at the practice room, 30 at the student lounge
+    * We work very hard to automate deploy process and maintenance
+  - **Bartender Project**: Provide virtual servers to students for web hosting
+    * Server called "bartender" which acts as a "jump host" for SSH, and serves
+    webpages from the guest servers
+    * Guest servers which are provided to the students and expose actual web
+    service
+    * Unfortunately, not yet ready for production
   - [Simple shell script snippet][backup.sh] for backing up home directories of
   users, written for internal use
   - Have written a few how-tos for server management

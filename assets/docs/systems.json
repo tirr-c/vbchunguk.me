@@ -1,0 +1,41 @@
+[
+  {
+    "name": "rust-lang/rust",
+    "description": "The Rust programming language",
+    "url": "github:rust-lang/rust",
+    "pr": [
+      {
+        "title": "Friendlier error message for closure argument type mismatch",
+        "status": "merged",
+        "url": "github:rust-lang/rust#44735"
+      },
+      {
+        "title": "Display spans correctly with non-ASCII characters",
+        "status": "open",
+        "url": "github:rust-lang/rust#45711"
+      },
+      {
+        "title": "ICE fix: Use T as the subpattern type of Box<T>",
+        "status": "merged",
+        "url": "github:rust-lang/rust#42730"
+      }
+    ]
+  },
+  {
+    "name": "thpatch/thtk",
+    "description": "A set of tools used for extracting and modifying Touhou Project games' data",
+    "url": "github:thpatch/thtk",
+    "pr": [
+      {
+        "title": "Add support for more games",
+        "status": "merged",
+        "url": "github:thpatch/thtk#1"
+      },
+      {
+        "title": "Use CMake instead of autotools",
+        "status": "merged",
+        "url": "github:thpatch/thtk#7"
+      }
+    ]
+  }
+]
