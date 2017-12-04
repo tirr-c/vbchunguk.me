@@ -11,7 +11,7 @@
       },
       {
         "title": "Display spans correctly with non-ASCII characters",
-        "status": "open",
+        "status": "merged",
         "url": "github:rust-lang/rust#45711"
       },
       {

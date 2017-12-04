@@ -4,7 +4,8 @@
   - Have built a simple tool that computes FIRST and FOLLOW for symbols of LL(1)
   grammar, for Compiler class assignment
   - Asynchronous programming using [futures] and [Tokio]
-  - Often contribute to the Rust compiler itself: +1586 -1051 from 15 Jun, 2017
+  - Often contribute to the Rust compiler itself
+    * +1928 -1090 from 15 Jun, 2017
     * Full list is available [here][rust-contrib]
 * C/C++
   - Trained with algorithm problem solving

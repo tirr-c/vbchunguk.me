@@ -1,16 +1,23 @@
 [
   {
     "name": "vbchunguk.me",
-    "language": "js",
+    "language": "Vue",
     "private": false,
     "url": "github:tirr-c/vbchunguk.me",
-    "description": "This resume is built with nuxt.js"
+    "description": "This resume is built with Nuxt.js"
   },
   {
     "name": "snucse/snucse",
-    "language": "js",
+    "language": "React",
     "private": false,
     "url": "github:snucse/snucse",
     "description": "The community site for SNU CSE students"
+  },
+  {
+    "name": "Web Mighty",
+    "language": "Angular 2",
+    "private": false,
+    "url": "github:swsnu/swpp17-team2",
+    "description": "Principles and Practices of Software Development class project"
   }
 ]
