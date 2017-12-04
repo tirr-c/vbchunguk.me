@@ -21,7 +21,7 @@ export default {
     sortedProjects() {
       return this.projects.sort((a, b) => {
         if (a.private !== b.private) return a.private;
-        return a.name > b.name;
+        return a.name.toLowerCase() > b.name.toLowerCase();
       });
     }
   },
