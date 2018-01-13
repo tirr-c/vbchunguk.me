@@ -15,9 +15,9 @@
   },
   {
     "name": "Web Mighty",
-    "language": "Angular 2",
+    "language": "Angular",
     "private": false,
-    "url": "github:swsnu/swpp17-team2",
-    "description": "Principles and Practices of Software Development class project"
+    "url": "github:web-mighty/web-mighty",
+    "description": "Mighty, a playing card game"
   }
 ]
