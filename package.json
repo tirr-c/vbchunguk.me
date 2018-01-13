@@ -19,9 +19,9 @@
   "homepage": "https://github.com/tirr-c/vbchunguk.me#readme",
   "dependencies": {
     "github-markdown-css": "^2.8.0",
-    "nuxt": "^1.0.0-alpha.5",
+    "nuxt": "^1.1.0",
     "octicons": "^5.0.1",
-    "vuetify": "^0.14.2"
+    "vuetify": "^0.17.6"
   },
   "devDependencies": {
     "css-loader": "^0.28.4",
