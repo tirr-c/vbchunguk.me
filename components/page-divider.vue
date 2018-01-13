@@ -1,5 +1,5 @@
 <template>
-  <div class="divider"></div>
+  <div class="page-divider"></div>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style scoped>
-.divider {
+.page-divider {
   height: 0;
   margin: 0;
   padding: 0;

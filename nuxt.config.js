@@ -1,7 +1,8 @@
 module.exports = {
   css: [
-    'vuetify/dist/vuetify.min.css',
+    'vuetify/dist/vuetify.css',
     'octicons/build/octicons.css',
+    'github-markdown-css/github-markdown.css',
     { src: '~/assets/stylesheets/main.css', lang: 'postcss' }
   ],
   plugins: [

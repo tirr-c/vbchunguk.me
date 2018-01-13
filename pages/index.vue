@@ -11,37 +11,38 @@
     </resume-header>
     <div class="body px-3 pb-3">
       <resume-part v-if="enableCover" title="Cover letter">
-        <div v-html="cover"></div>
+        <div v-html="cover" class="markdown-body"></div>
       </resume-part>
-      <page-divider></page-divider>
+      <page-divider v-if="enableCover"></page-divider>
       <resume-part title="Curriculum vitae">
-        <div v-html="cv"></div>
+        <div v-html="cv" class="markdown-body"></div>
       </resume-part>
       <resume-part title="Web frontend development experiences">
-        <div v-html="web"></div>
+        <div v-html="web" class="markdown-body"></div>
         <resume-projects :projects="webProjects"></resume-projects>
       </resume-part>
       <page-divider></page-divider>
       <resume-part title="Systems programming language experiences">
-        <div v-html="systems"></div>
+        <div v-html="systems" class="markdown-body"></div>
         <resume-pr-list :projects="systemsProjects"></resume-pr-list>
       </resume-part>
       <page-divider></page-divider>
       <resume-part title="Server administration experiences">
-        <div v-html="server"></div>
+        <div v-html="server" class="markdown-body"></div>
       </resume-part>
+      <page-divider></page-divider>
       <resume-part title="Personal projects">
         <resume-projects :projects="personalProjects"></resume-projects>
       </resume-part>
-      <page-divider></page-divider>
       <resume-part title="Team projects">
         <resume-projects :projects="teamProjects"></resume-projects>
       </resume-part>
       <resume-part title="Open source contribution">
         <resume-pr-list :projects="oscProjects"></resume-pr-list>
       </resume-part>
+      <page-divider></page-divider>
       <resume-part title="Miscellaneous projects">
-        <div v-html="misc"></div>
+        <div v-html="misc" class="markdown-body"></div>
       </resume-part>
     </div>
     <v-footer class="hidden-print">
