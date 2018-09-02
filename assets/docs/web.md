@@ -6,6 +6,6 @@ game, but it was far from actual frontend development
   - React
   - Vue
   - Angular 2
-* Currently interested in Vue with Nuxt.js
+* Using React and Redux heavily, in Spoqa
 
 [SNUCSE]: https://www.snucse.org/

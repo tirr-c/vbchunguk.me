@@ -1,5 +1,5 @@
 * Rust
-  - My favorite language along with JavaScript/TypeScript
+  - My favorite language along with TypeScript
   - Have written a web crawler
   - Have built a simple tool that computes FIRST and FOLLOW for symbols of LL(1)
   grammar, for Compiler class assignment
@@ -10,6 +10,6 @@
 * C/C++
   - Trained with algorithm problem solving
 
-[futures]: https://docs.rs/futures
+[futures]: https://rust-lang-nursery.github.io/futures-rs/
 [Tokio]: https://tokio.rs/
 [rust-contrib]: https://github.com/rust-lang/rust/pulls?q=is%3Apr%20author%3Atirr-c

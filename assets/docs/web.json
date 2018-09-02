@@ -19,5 +19,12 @@
     "private": false,
     "url": "github:web-mighty/web-mighty",
     "description": "Mighty, a playing card game"
+  },
+  {
+    "name": "spoqa/dodo-react-carousel",
+    "language": "React",
+    "private": false,
+    "url": "github:spoqa/dodo-react-carousel",
+    "description": "Simple React carousel component. Not optimized well though."
   }
 ]

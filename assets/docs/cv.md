@@ -1,4 +1,4 @@
-* 2018 - now: [Spoqa]
+* 2018-01 - now: [Spoqa]
 * 2016 - now: [Seoul National University, Seoul, Korea][snu]
   - B.S. Student
   - Major in [Computer Science and Engineering][cse]

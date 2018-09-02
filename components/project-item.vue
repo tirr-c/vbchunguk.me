@@ -74,8 +74,12 @@ export default {
       switch (lang) {
         case 'js':
           return 'JavaScript';
+        case 'ts':
+          return 'TypeScript';
         case 'c#':
           return 'C#';
+        case 'rust':
+          return 'Rust';
         default:
           return lang;
       }
