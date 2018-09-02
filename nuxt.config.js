@@ -1,7 +1,7 @@
 module.exports = {
   css: [
     'vuetify/dist/vuetify.css',
-    'octicons/build/octicons.css',
+    'octicons/build/build.css',
     'github-markdown-css/github-markdown.css',
     { src: '~/assets/stylesheets/main.css', lang: 'postcss' }
   ],
@@ -55,8 +55,9 @@ module.exports = {
     },
     postcss: {
       plugins: [
-        require('postcss-import'),
-        require('postcss-cssnext')
+        require('postcss-preset-env')({
+          browsers: ['last 2 versions', 'not dead']
+        })
       ]
     }
   }
