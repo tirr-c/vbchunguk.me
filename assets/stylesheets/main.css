@@ -20,6 +20,11 @@
     display: none;
   }
 }
+@media screen {
+  .hidden-screen {
+    display: none;
+  }
+}
 
 @page {
   size: A4 portrait;

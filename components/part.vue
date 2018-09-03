@@ -1,6 +1,6 @@
 <template>
   <div class="my-4">
-    <div class="headline pb-3">{{ title }}</div>
+    <div v-if="title" class="headline pb-3">{{ title }}</div>
     <slot></slot>
   </div>
 </template>

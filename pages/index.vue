@@ -10,7 +10,10 @@
       </resume-social>
     </resume-header>
     <div class="body px-3 pb-3">
-      <resume-part v-if="enableCover" title="Cover letter">
+      <resume-part class="hidden-screen" v-if="enableCover">
+        <div v-html="webpage"></div>
+      </resume-part>
+      <resume-part v-if="enableCover">
         <div v-html="cover" class="markdown-body"></div>
       </resume-part>
       <page-divider v-if="enableCover"></page-divider>
@@ -34,13 +37,13 @@
       <resume-part title="Personal projects">
         <resume-projects :projects="personalProjects"></resume-projects>
       </resume-part>
+      <page-divider></page-divider>
       <resume-part title="Team projects">
         <resume-projects :projects="teamProjects"></resume-projects>
       </resume-part>
       <resume-part title="Open source contribution">
         <resume-pr-list :projects="oscProjects"></resume-pr-list>
       </resume-part>
-      <page-divider></page-divider>
       <resume-part title="Miscellaneous projects">
         <div v-html="misc" class="markdown-body"></div>
       </resume-part>
@@ -65,6 +68,7 @@ import ResumePr from '~/components/pr.vue';
 import GithubCorner from '~/components/github-corner.vue';
 import PageDivider from '~/components/page-divider.vue';
 
+import webpage from '~/assets/docs/webpage.md';
 import cover from '~/assets/docs/cover.md';
 import cv from '~/assets/docs/cv.md';
 import web from '~/assets/docs/web.md';
@@ -86,7 +90,8 @@ export default {
   data() {
     return {
       name: 'Wonwoo Choi',
-      enableCover: false,
+      enableCover: true,
+      webpage,
       cover,
       cv,
       web,
